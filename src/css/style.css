@@ -1,0 +1,29 @@
+img{
+    border-radius: 16px;
+    max-width: 100%;
+    
+}
+
+.attribution{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.attribution h1{
+    padding: px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.attribution p{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
