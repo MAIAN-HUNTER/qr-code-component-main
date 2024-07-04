@@ -1,103 +1,139 @@
-# Frontend Mentor - QR code component solution
+# Frontend Mentor - QR code component
 
-This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Olá, Este é o meu primeiro projeto feito pelo frontend mentor e estou muito feliz de compartilha-lo com o mundo!
 
-## Table of contents
+## Ideias, Planejamento e Execução
+incialmente, pensei em fazer do projeto o mais simples e objetivo possivel, com uma fonte padrão "Roboto" do google-fonts. Simples, porem legivel e eficaz. O minimo de linhas também para tornar mais rapida a leitura do usuario. Optei também por classificar paragrafos, titulos e design por tags HTML e classes CSS para maior versatilidade na manipulação de estilos tanto das fontes, como imagem QR code e o design das bordas. decidi também estilizar o componente QR code para diferentes resoluções de dispositivos para desktops com resoluções distintas e smartphones.
 
-- [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+### O que eu aprendi
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+principalmente estilizações no CSS. classes no CSS e tags no HTML podem trabalhar em conhunto para maior precisão no  design. o uso de media queries tambem em resoluções de diferentes dispositivos tamém foi um otimo desafio para meu entendimento da ferramenta na melhora do design
 
-## Overview
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Pontos de destaque das tags HTML e classes CSS:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="container">
+    <div class="attribution">
+        <img src="src/images/image-qr-code.png" alt="">
+
+      <h1>Improve your front-end skills by building projects</h1>
+
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+
+
+    </div>
+</section>
+        <p class="credits">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">MAIAN-HUNTER</a>.</p>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+img{
+    border-radius: 16px;
+    max-width: 100%;
+    
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.attribution{
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.attribution h1{
+    padding: px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.attribution p{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+p{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../../design/fonts/Roboto-Regular.ttf');
+}
+body{
+    margin: 50px;
+    font-family: 'roboto';
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 400px;
+    max-width: 100%;
+    align-items: center;
+}
+
+/* For desktop */
+@media (max-width: 3440px){
+    .container{
+        max-width: 500px;
+        margin: 300px;
+        margin-left: 1000px;
+    }
+    .credits{
+        margin-left: 800px;
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .container{
+        max-width: 390px;
+        margin: 90px;
+        margin-left: 200px;
+    }
+    .credits{
+        margin-left: 100px;
+    }
+    
+}
+
+@media (max-width: 1440px){
+    .container{
+        max-width: 390px;
+        margin: 90px;
+        margin-left: 400px;
+    }
+    .credits{
+        margin-left: 100px;
+    }
+    
+}
+
+/* For smartphones */
+@media (max-width: 768px) {
+    
+    .container{
+       min-width: 300px;
+       margin: 80px;
+   }
+   .credits{
+    margin-left: 0px;
+   }
+ }
 ```
+### Desenvolvimentos futuros
+Javascript, React e Back end. pretendo trabalhar com a vasta biblioteca de informações destas linguagens para melhor desenvolvimento profissional pois não estou muito familiarizado com as mesmas  
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### sites com recursos Úteis
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+- [site W3schools](https://www.w3schools.com/css/css_rwd_intro.asp) - Este site me auxiliou a me localizar melhor nas diversas ferramentas de estilizações que o CSS tem a oferecer. Com certeza será um site que salvarei nos Favoritos.
 
-### Continued development
+## Autor
+- Frontend Mentor - [@MAIAN-HUNTER](https://www.frontendmentor.io/profile/MAIAN-HUNTER)
+- Linkedin - [Maian-Lucas](https://www.linkedin.com/in/maian-lucas-1a796026a/)
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+## Conhecimentos
+92% de meu conhecimento foi adquirido pelo curso de programação Dev Quest, oa outros 8% foram de documentações de sites da internet como o proprio Frontend Mentor, W3schools e de videos da plataforma youtube.
